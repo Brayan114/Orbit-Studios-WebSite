@@ -1,0 +1,38 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="swirlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#0b0d17"/>
+  
+  <!-- Nebula Swirl -->
+  <g transform="rotate(0 100 100)">
+    <path d="M100,100 m-60,-20 q30,-50 60,-50 q40,0 60,50 q-30,50 -60,50 q-40,0 -60,-50" 
+          fill="url(#swirlGradient)" opacity="0.8" 
+          transform="rotate(45 100 100)"/>
+    <path d="M100,100 m-50,-10 q25,-40 50,-40 q35,0 50,40 q-25,40 -50,40 q-35,0 -50,-40" 
+          fill="#2563eb" opacity="0.6" 
+          transform="rotate(-15 100 100)"/>
+    <path d="M100,100 m-55,-15 q28,-45 55,-45 q38,0 55,45 q-28,45 -55,45 q-38,0 -55,-45" 
+          fill="#7c3aed" opacity="0.5" 
+          transform="rotate(100 100 100)"/>
+  </g>
+
+  <!-- Orbital Rings -->
+  <g stroke="white" stroke-width="4" fill="none" stroke-linecap="round">
+    <ellipse cx="100" cy="100" rx="75" ry="25" transform="rotate(45 100 100)" opacity="0.9" />
+    <ellipse cx="100" cy="100" rx="75" ry="25" transform="rotate(-45 100 100)" opacity="0.9" />
+  </g>
+  
+  <!-- Satellites -->
+  <circle cx="160" cy="55" r="5" fill="white" />
+  <circle cx="40" cy="145" r="4" fill="white" />
+
+  <!-- Center Core -->
+  <circle cx="100" cy="100" r="18" fill="white" />
+</svg>
