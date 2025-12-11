@@ -10,7 +10,8 @@ const projects: Project[] = [
     tags: ['React', 'Firebase', 'Tailwind'],
     imageUrl: 'https://picsum.photos/seed/studyorbit/600/400',
     status: 'Work In Progress',
-    link: '#'
+    liveUrl: '#',
+    codeUrl: '#'
   },
   {
     id: '2',
@@ -19,16 +20,18 @@ const projects: Project[] = [
     tags: ['AI Generation', 'Web Audio API', 'Canvas'],
     imageUrl: 'https://picsum.photos/seed/aetheris/600/400',
     status: 'Creative Project',
-    link: '#'
+    liveUrl: '#',
+    codeUrl: '#'
   },
   {
     id: '3',
-    title: 'Java Weather Toy',
-    description: 'A lightweight Android weather application built with raw Java. Fetches real-time data from OpenWeatherMap API.',
-    tags: ['Java', 'Android SDK', 'Rest API'],
-    imageUrl: 'https://picsum.photos/seed/weather/600/400',
+    title: 'Orbit Weather',
+    description: 'A modern weather and productivity app with world clock, alarms, reminders, and calendar. Features real-time weather data and beautiful UI.',
+    tags: ['React', 'TypeScript', 'WeatherAPI', 'TailwindCSS'],
+    imageUrl: 'https://picsum.photos/seed/orbitweather/600/400',
     status: 'Completed',
-    link: '#'
+    liveUrl: 'https://orbit-weather.netlify.app',
+    codeUrl: 'https://github.com/Brayan114/orbit-weather'
   }
 ];
 
@@ -79,10 +82,10 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-4 mt-auto">
-                  <a href={project.link} className="flex items-center gap-2 text-sm font-semibold text-white hover:text-purple-400 transition-colors">
+                  <a href={project.liveUrl || '#'} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-white hover:text-purple-400 transition-colors">
                     <ExternalLink className="w-4 h-4" /> Live Demo
                   </a>
-                  <a href={project.link} className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors">
+                  <a href={project.codeUrl || '#'} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors">
                     <Github className="w-4 h-4" /> Code
                   </a>
                 </div>

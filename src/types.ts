@@ -6,6 +6,8 @@ export interface Project {
   imageUrl: string;
   status?: string;
   link?: string;
+  liveUrl?: string;
+  codeUrl?: string;
 }
 
 export interface Skill {

@@ -1,75 +1,106 @@
-# React + TypeScript + Vite
+# 🚀 Orbit Studios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, space-themed portfolio website built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+![Orbit Studios Preview](https://picsum.photos/800/400)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Stunning Space Theme** - Animated starfield background with nebula effects
+- **Responsive Design** - Looks great on desktop, tablet, and mobile
+- **Smooth Animations** - Micro-interactions and hover effects throughout
+- **Contact Form** - Powered by Formspree for easy message handling
+- **Fast Performance** - Built with Vite for lightning-fast load times
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tech Stack
 
-Note: This will impact Vite dev & build performances.
+- **React 18** - UI Framework
+- **TypeScript** - Type Safety
+- **Tailwind CSS** - Styling
+- **Vite** - Build Tool
+- **Lucide React** - Icons
+- **Formspree** - Contact Form Backend
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js 18+ 
+- npm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repository
+git clone https://github.com/Brayan114/Orbit-Studios-WebSite.git
+
+# Navigate to project directory
+cd Orbit-Studios-WebSite
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The site will be available at `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Building for Production
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+The production files will be in the `dist` folder.
+
+## 📁 Project Structure
+
+```
+orbit-studios/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── OrbitLogo.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Skills.tsx
+│   │   └── StarBackground.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+└── package.json
+```
+
+## 🎨 Customization
+
+### Update Your Info
+- Edit `Hero.tsx` - Main heading and tagline
+- Edit `About.tsx` - Your bio and fast facts
+- Edit `Projects.tsx` - Your portfolio projects
+- Edit `Skills.tsx` - Your tech stack
+- Edit `Contact.tsx` - Your contact info and social links
+
+### Contact Form Setup
+1. Create a free account at [formspree.io](https://formspree.io)
+2. Create a new form and copy the Form ID
+3. Update `FORMSPREE_FORM_ID` in `src/components/Contact.tsx`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Icons by [Lucide](https://lucide.dev/)
+- Fonts by [Google Fonts](https://fonts.google.com/)
+- Deployed on [Netlify](https://netlify.com/)
+
+---
+
+Built with 💜 by [Brie](https://x.com/DevBrie) at Orbit Studios
